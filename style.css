@@ -12,54 +12,57 @@ body{
 h1 {
     font-size: 4rem;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
+    margin: auto;
 }
 #subtitulo{
     font-size: 1.5rem;
     font-weight:bolder;
     text-align: center;
     padding: 2rem;
+    margin: auto;
 }
 .container{
-    display: column;
-    padding: 1rem;
-    margin: 0;
-    text-align: center;
-    font-weight: bold;
-}
-ul {
     display: flex;
-    justify-content: center;
-    float: inline-end;
-    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
-li {
+ul{
+    display: flex;
+    flex-direction: column;
+}
+li{
     list-style: none;
     padding: 1rem;
     font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 #dificuldadesJogo{
     padding: 1rem;
-    margin: 0;
     font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 #tentativas{
-    font-size: 1.4rem;
+    display: block;;
+    font-size: 1.5rem;
     border-radius: 1rem;
     border: none;
-    background-color: #0b243bec;
+    background-color: #133d64ec;
     color: white;
-    align-items: center;
+   text-align: center;
 }
 #jogo{
-    display: flex;
-    flex-direction: column;
-    font-size: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
-    padding: 100px;
-}
-label{
-    padding: 1rem;
+    padding: 4rem;
+    margin: auto;
+    font-size: 2rem;
 }
 input#numero{
     padding: 1rem;
@@ -97,67 +100,36 @@ img{
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 3rem;
-    }
-
-    #subtitulo {
-        font-size: 1.2rem;
-    }
-
-    .container {
         padding: 1rem;
     }
 
-    #jogo {
-        padding: 50px;
-    }
-
-    button#chute {
-        font-size: 1.2rem;
-        padding: 0.8rem;
-    }
-
-    input#numero {
-        font-size: 1.2rem;
-        padding: 0.8rem;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    li {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
     #subtitulo {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .container {
+        width: 90%;
+        align-items: center;
+        text-align: center;
     }
 
     #jogo {
-        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        font-size: 1.5rem;
     }
 
-    button#chute {
-        font-size: 1rem;
-        padding: 0.6rem;
-    }
-
-    input#numero {
-        font-size: 1rem;
-        padding: 0.6rem;
+    input#numero, button#chute {
+        width: 100%;
+        max-width: 300px;
+        font-size: 1.2rem;
     }
 
     img {
-        width: 100%;
-    }
-
-    li {
-        font-size: 16px;
+        max-width: 100%;
+        height: auto;
     }
 }
