@@ -18,3 +18,5 @@ Prepare-se para testar seus instintos e boa sorte!
 - **HTML5**
 - **CSS3**
 - **JavaScript (ES6+)**
+## Como acessar
+- Para acessar o jogo bastar copiar essa URL e acessar: https://gabrielvsiqueira.github.io/Shrek-Sure-Guess/ 
