@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1> Adivinhe o número</h1>
+        <p id="subtitulo">Site criado para criar um jogo de adivinhação, de 1 a 99.
+        O usuário terá 3 níveis de dificuldade para escolher qual 
+        quer jogar.</p>
+        <div class="container">
+            <ul> 
+                <li>  Fácil = 20 tentativas </li>
+                 <li> Médio= 15 tentativas </li>
+                 <li> Difícil = 10 tentativas</li>
+            </ul>
+    <main>
+        <div id="dificuldadesJogo">
+            <label for="tentativas">Escolha o nível de dificuldade:</label>
+            <select name="tentativas" id="tentativas" onclick="escolherDificuldade()">
+                <option value="20">Fácil</option>
+                <option value="15">Médio</option>
+                <option value="10">Difícil</option>
+            </select>
+        </div>
+    </div >
+        <div id="jogo">
+            <label for="numero">Escolha um número entre 1 e 99:</label>
+            <input type="number" id="numero">
+            <button id="chute" onclick="enviarChute()">Enviar</button>
+            <p id="mensagem"></p>
+        </div>
+        <img src="./img/sherek.gif" alt="shrek dançando">
+         </main>
+    <script src="index.js"></script>
+</body>
+</html>
