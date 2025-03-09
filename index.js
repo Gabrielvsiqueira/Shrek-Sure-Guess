@@ -6,16 +6,16 @@ function escolherDificuldade() {
     let valorSelecionado = opcao.value;
 
     switch (valorSelecionado) {
-        case "20":
-            maxTentativas = 20;
-            alert("Você escolheu a dificuldade Fácil, você tem 20 tentativas.");
-            break;
         case "15":
             maxTentativas = 15;
-            alert("Você escolheu a dificuldade Média, você tem 15 tentativas.");
+            alert("Você escolheu a dificuldade Fácil, você tem 20 tentativas.");
             break;
         case "10":
             maxTentativas = 10;
+            alert("Você escolheu a dificuldade Média, você tem 15 tentativas.");
+            break;
+        case "5":
+            maxTentativas = 5;
             alert("Você escolheu a dificuldade Difícil, você tem 10 tentativas.");
             break;
         default:
